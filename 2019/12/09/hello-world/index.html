@@ -309,21 +309,35 @@
   
   
   
-  <div id="cloud-tie-wrapper" class="cloud-tie-wrapper"></div>
-<script>
-  var cloudTieConfig = {
-    url: "http://yoursite.com/2019/12/09/hello-world/", 
-    sourceId: "hello-world",
-    productKey: "true",
-    target: "cloud-tie-wrapper"
-  };
-</script>
-<script src="//img1.cache.netease.com/f2e/tie/yun/sdk/loader.js"></script>
-  
 
   
 
   
+
+
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "Hello World" -->
+  var giteement = new Giteement({
+    id: '20191209181815',
+    owner: 'NiuRS',
+    repo: 'niurs-blog',
+    backcall_uri: 'https://niurunsheng.github.io',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: 'e9a48dc249a80f91293fa6b3598e5db830b142728efbec311731d18b61f5279a',
+      client_secret: '37bbad545d2db950e3194f758bd530e74f8c69d0f0320031db812213eb6a6eac'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+
+
+
 
   
 
